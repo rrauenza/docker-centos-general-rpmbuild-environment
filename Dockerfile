@@ -22,6 +22,8 @@ RUN yum -y install yum-utils
 # Install rpmdevtools to use rpmdev-setuptree command
 RUN yum -y install rpmdevtools
 
+RUN yum -y install openssl
+
 # Setup sshd to accept login
 RUN yum -y install openssh-server
 RUN sed -ri 's/UsePAM yes/#UsePAM yes/g' /etc/ssh/sshd_config
