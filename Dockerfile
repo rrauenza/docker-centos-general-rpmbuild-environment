@@ -1,5 +1,4 @@
-# General build RPM environment for CentOS 6.x
-#
+# General build RPM environment for CentOS 7.x
 # VERSION       0.0.1
 
 FROM centos:centos7
