@@ -26,8 +26,8 @@ RUN yum -y install rpmdevtools
 RUN yum -y install openssh-server
 RUN sed -ri 's/UsePAM yes/#UsePAM yes/g' /etc/ssh/sshd_config
 RUN sed -ri 's/#UsePAM no/UsePAM no/g' /etc/ssh/sshd_config
-RUN /etc/init.d/sshd start
-RUN /etc/init.d/sshd stop
+#RUN /etc/init.d/sshd start
+#RUN /etc/init.d/sshd stop
 EXPOSE 22
 
 # Setup rpm build configuration for root user
