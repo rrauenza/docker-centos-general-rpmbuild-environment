@@ -2,7 +2,7 @@
 #
 # VERSION       0.0.1
 
-FROM centos:centos6
+FROM centos:centos7
 MAINTAINER Kentaro Yoshida "https://github.com/y-ken"
 
 # Install up-to-date epel rpm repository
