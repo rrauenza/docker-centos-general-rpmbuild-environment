@@ -5,7 +5,7 @@ FROM centos:centos7
 MAINTAINER Rich Rauenzahn "https://github.com/rrauenza"
 
 # Install up-to-date epel rpm repository
-RUN yum -y http://dl.fedoraproject.org/pub/epel/beta/7/x86_64/epel-release-7-0.2.noarch.rpm
+RUN yum -y install http://dl.fedoraproject.org/pub/epel/beta/7/x86_64/epel-release-7-0.2.noarch.rpm
 
 # Install various packages to get compile environment
 RUN yum -y groupinstall 'Development Tools'
